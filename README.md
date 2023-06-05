@@ -19,12 +19,15 @@ wget -O /etc/yum.repos.d/jenkins.repo \
 ## Import a key file from Jenkins-CI to enable installation from the package: 
 ```sh
 rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
-
+ 
+ ```
+## Upgrade 
+ ```sh
 yum upgrade
  ```
 ## Install Java (Amazon Linux 2):
 ```sh
-sudo amazon-linux-extras install java-openjdk11 -y
+amazon-linux-extras install java-openjdk11 -y
  ```
 ## Install Jenkins:
 ```sh
