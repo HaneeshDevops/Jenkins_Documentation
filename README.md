@@ -1,6 +1,6 @@
 # Jenkins_Documentation 
-
-### Downloading and installing Jenkins
+### METHOD 1
+### Downloading and installing Jenkins on Amzon Linux Machine
 
 ## Switch to root user
 ```sh
@@ -46,7 +46,9 @@ systemctl start jenkins
 systemctl status jenkins
 ```
 ## To check Admin password
+```sh
 cat /var/lib/jenkins/secrets/initialAdminPassword
+```
 
 ## All Commands at once:
 ```sh
@@ -63,8 +65,8 @@ systemctl status jenkins
 ```
 
 
-
-# Downloading and running Jenkins in Docker
+### METHOD 2
+# Downloading and running Jenkins in Docker(as a container):
 
 ## Create a bridge network in Docker using the following docker network create command:
 ```sh
@@ -111,4 +113,8 @@ docker run --name jenkins-blueocean --restart=on-failure --detach \
   --volume jenkins-docker-certs:/certs/client:ro \
   myjenkins-blueocean:2.401.1-1
 ```
+## Execute the following command to get the initial administrator password:
+```sh
+docker exec jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
 
+```
