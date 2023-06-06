@@ -68,6 +68,13 @@ systemctl status jenkins
 ### METHOD 2
 # Downloading and running Jenkins in Docker(as a container):
 
+## Switch to root user & Install Docker:
+```sh
+sudo su -
+yum install -y docker
+systemctl start docker 
+systemctl enable docker
+```
 ## Create a bridge network in Docker using the following docker network create command:
 ```sh
 docker network create jenkins
