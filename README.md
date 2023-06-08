@@ -120,6 +120,14 @@ docker run --name jenkins-blueocean --restart=on-failure --detach \
   --volume jenkins-docker-certs:/certs/client:ro \
   myjenkins-blueocean:2.401.1-1
 ```
+## All Docker images
+```sh
+docker images
+```
+## All running Docker Containers  
+```sh
+docker ps
+```
 ## Execute the following command to get the initial administrator password:
 ```sh
 docker exec jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
