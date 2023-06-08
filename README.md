@@ -138,6 +138,6 @@ select pipeline option from down
 
 select Poll SCM:* * * * *
 go to Pipeline : Pipeline script from SCM
-SCM:git & Repository URL : https://github.com/Haneesh55/jenkin-devops-microservice.git
+SCM:git & Repository URL : https://github.com/Haneesh55/jenkin-devops-microservice-test1.git
 BUILD NOW : click on link & openconsole #
 ```
