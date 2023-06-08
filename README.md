@@ -128,6 +128,7 @@ docker images
 ```sh
 docker ps
 ```
+# Wait for 30seconds to 1Minute
 ## Execute the following command to get the initial administrator password:
 ```sh
 docker exec jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
