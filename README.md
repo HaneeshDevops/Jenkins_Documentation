@@ -89,7 +89,7 @@ export DOCKER_HOST='tcp://172.31.93.144:2375'
 ```sh
 source ~/.bashrc
 ```
-
+## If running in  localmachine then : DOCKER_HOST='tcp://127.0.0.1:2375'(also modify in jenkins file)
 ## All Commands at once:
 ```sh
 sudo su -
