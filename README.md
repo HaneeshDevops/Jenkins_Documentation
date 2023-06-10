@@ -121,7 +121,7 @@ SCM:git & Repository URL : https://github.com/Haneesh55/SpringBootEcommerceAppli
 BUILD NOW : click on link & openconsole #
 ```
 
-# <><><<><><<>><><><><><><>><><><><><><><><>><<><>
+# <><><<><><<>><><><><><><>><><><><><><><><>>
 
 # METHOD 2
 # Downloading and running Jenkins in Docker(as a container):
