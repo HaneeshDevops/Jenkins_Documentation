@@ -70,7 +70,7 @@ sudo vi /etc/sysconfig/docker
 ```
 ## Find the line that starts with OPTIONS= and add the following flags to the end of the line:
 ```sh
--H tcp://172.31.93.144:2375 -H unix:///var/run/docker.sock
+OPTIONS="-H tcp://172.31.93.144:2375 -H unix:///var/run/docker.sock"
 ```
 ## restarts the Docker service
 ```sh
