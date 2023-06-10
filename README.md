@@ -90,6 +90,7 @@ source ~/.bashrc
 
 ## All Commands at once:
 ```sh
+sudo su -
 yum update -y
 wget -O /etc/yum.repos.d/jenkins.repo \
     https://pkg.jenkins.io/redhat-stable/jenkins.repo
