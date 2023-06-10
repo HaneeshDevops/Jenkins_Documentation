@@ -106,7 +106,7 @@ systemctl status jenkins
 ```
 
 
-### METHOD 2
+# METHOD 2
 # Downloading and running Jenkins in Docker(as a container):
 
 ## Switch to root user & Install Docker:
@@ -180,7 +180,7 @@ docker exec jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
 ```sh
 Manage jenkins : Global Tool configuration:
 add maven & docker
-
+Add dokcer & docker-compose plugins
 New Job:
 Name: jenkins_devops_microservice_pipeline
 select pipeline option from down
@@ -188,6 +188,6 @@ select pipeline option from down
 
 select Poll SCM:* * * * *
 go to Pipeline : Pipeline script from SCM
-SCM:git & Repository URL : https://github.com/Haneesh55/jenkin-devops-microservice-test1.git
+SCM:git & Repository URL : https://github.com/Haneesh55/SpringBootEcommerceApplication.git
 BUILD NOW : click on link & openconsole #
 ```
