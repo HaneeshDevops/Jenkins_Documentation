@@ -29,10 +29,7 @@ yum upgrade
 ```sh
 amazon-linux-extras install java-openjdk11 -y
  ```
-## Install Jenkins:
-```sh
-yum install jenkins -y
-```
+
 ## Install maven ,Docker & Docker Compose
 ```sh
 sudo yum install maven -y
@@ -42,6 +39,11 @@ systemctl enable docker
 curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 yum install git -y
+```
+
+## Install Jenkins:
+```sh
+yum install jenkins -y
 ```
 
 ## Enable the Jenkins service to start at boot:
