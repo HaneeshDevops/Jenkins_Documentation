@@ -60,6 +60,33 @@ systemctl status jenkins
 ```sh
 cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
+# Configure Docker to listen on a specific IP address and port:
+
+## open the Docker configuration file 
+```sh
+sudo vi /etc/sysconfig/docker
+```
+## Find the line that starts with OPTIONS= and add the following flags to the end of the line:
+```sh
+-H tcp://172.31.93.144:2375 -H unix:///var/run/docker.sock
+```
+## restarts the Docker service
+```sh
+sudo service docker restart
+```
+## open the .bashrc file
+```sh
+vi ~/.bashrc
+```
+## Add the following line at the end of the file:
+```sh
+export DOCKER_HOST='tcp://172.31.93.144:2375'
+```
+
+## apply the changes made to the .bashrc file
+```sh
+source ~/.bashrc
+```
 
 ## All Commands at once:
 ```sh
