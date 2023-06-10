@@ -30,7 +30,7 @@ yum upgrade
 amazon-linux-extras install java-openjdk11 -y
  ```
 
-## Install maven ,Docker & Docker Compose
+## Install maven ,Docker & docker-compose
 ```sh
 sudo yum install maven -y
 yum install -y docker
