@@ -33,14 +33,14 @@ amazon-linux-extras install java-openjdk11 -y
 ```sh
 yum install jenkins -y
 ```
-## Install mavne ,Docker & Docker Compose
+## Install maven ,Docker & Docker Compose
 ```sh
 sudo yum install maven -y
 yum install -y docker
 systemctl start docker 
 systemctl enable docker
-sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
 yum install git -y
 ```
 
