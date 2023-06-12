@@ -32,7 +32,7 @@ amazon-linux-extras install java-openjdk11 -y
 
 ## Install maven ,Docker & docker-compose
 ```sh
-sudo yum install maven -y
+yum install maven -y
 yum install -y docker
 systemctl start docker 
 systemctl enable docker
@@ -50,6 +50,10 @@ yum install jenkins -y
 ```sh
 systemctl enable jenkins
 ```
+## Add the Jenkins user to the docker group:
+```sh
+sudo usermod -aG docker jenkins
+```
 ## Start Jenkins as a service:
 ```sh
 systemctl start jenkins
@@ -62,7 +66,9 @@ systemctl status jenkins
 ```sh
 cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
-# Configure Docker to listen on a specific IP address and port:
+# <><>><> THAT'S IT YOU CAN START USING JENKINS RIGHT AWAY <><><><>
+
+# (For Remote Machine) Configure Docker to listen on a specific IP address and port:
 
 ## open the Docker configuration file 
 ```sh
@@ -89,7 +95,7 @@ export DOCKER_HOST='tcp://172.31.93.144:2375'
 ```sh
 source ~/.bashrc
 ```
-## If running in  localmachine then : DOCKER_HOST='tcp://127.0.0.1:2375'(also modify in jenkins file)
+
 ## All Commands at once:
 ```sh
 sudo su -
