@@ -1,7 +1,7 @@
 # Jenkins_Documentation 
 ### METHOD 1
 ### Downloading and installing Jenkins on Amzon Linux Machine
-
+(sudo date -s "2023-06-12 03:28:00")
 ## Switch to root user
 ```sh
 sudo su -
