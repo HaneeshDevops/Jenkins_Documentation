@@ -23,7 +23,7 @@ rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
  ```
 ## Upgrade 
  ```sh
-yum upgrade
+yum upgrade -y
  ```
 ## Install Java (Amazon Linux 2):
 ```sh
