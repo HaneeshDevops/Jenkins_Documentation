@@ -33,6 +33,11 @@ amazon-linux-extras install java-openjdk11 -y
 ## Install maven ,Docker & docker-compose
 ```sh
 yum install maven -y
+wget http://mirror.olnevhost.net/pub/apache/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.tar.gz
+tar xzf apache-maven-3.2.5-bin.tar.gz
+sudo mv apache-maven-3.2.5 /opt/
+export PATH=/opt/apache-maven-3.2.5/bin:$PATH
+source ~/.bashrc
 yum install -y docker
 systemctl start docker 
 systemctl enable docker
