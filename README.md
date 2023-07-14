@@ -59,6 +59,11 @@ systemctl enable jenkins
 ```sh
 sudo usermod -aG docker jenkins
 ```
+## Sometimes we may need to execute these commands to give docker permisiions
+```
+sudo chown jenkins:docker /var/run/docker.sock
+sudo chmod 660 /var/run/docker.sock
+```
 ## Start Jenkins as a service:
 ```sh
 systemctl start jenkins
