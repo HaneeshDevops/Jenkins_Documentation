@@ -164,7 +164,7 @@ docker run --name jenkins-docker --rm --detach \
   docker:dind --storage-driver overlay2
 ```
 ```
-docker run --name jenkins-docker --rm --detach \
+docker run --name docker_dind_container --rm --detach \
   --privileged --network jenkins --network-alias docker \
   --env DOCKER_TLS_CERTDIR=/certs \
   --volume jenkins-docker-certs:/certs/client \
@@ -205,7 +205,7 @@ docker run --name jenkins-blueocean --restart=on-failure --detach \
   myjenkins-blueocean:2.401.1-1
 ```
 ```
-docker run --name jenkins-blueocean --restart=on-failure --detach \
+docker run --name jenkins_dind_container --restart=on-failure --detach \
   --network jenkins --env DOCKER_HOST=tcp://docker:2376 \
   --env DOCKER_CERT_PATH=/certs/client --env DOCKER_TLS_VERIFY=1 \
   --publish 8080:8080 --publish 50000:50000 \
